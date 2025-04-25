@@ -18,7 +18,7 @@ public class PersonaController {
         this.personaService = personaService;
     }
 
-    @PostMapping("/guardapersona1")
+    @PostMapping("/guardapersona")
     public ResponseEntity<Persona> guardaPersona(@RequestBody Persona persona){
         return new ResponseEntity<>(personaService.guardarPersona(persona), HttpStatus.CREATED);
     }
